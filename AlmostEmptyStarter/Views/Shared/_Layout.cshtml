@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>@ViewData["Title"]</title>
+        <link rel="stylesheet" href="~/css/site.css">
+    </head>
+    <body>
+        <div class="navBar">
+            <h2 class="navBarTitle">First ASP Website</h2>
+            <a class="navBarItem" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="navBarItem" asp-controller="Home" asp-action="About">About</a>
+            <a class="navBarItem" asp-controller="Home" asp-action="Images">Images</a>
+        </div>
+        @*Before render*@
+        @RenderBody()
+        @*After render*@
+    </body>
+</html>
